@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Car Check-Out</h2>
+    <form action="{{ url_for('checkout') }}" method="post">
+        <label for="car_number">Car Number:</label>
+        <input type="text" name="car_number" required>
+        <button type="submit">Check-Out</button>
+    </form>
+{% endblock %}
